@@ -1,0 +1,56 @@
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.mars-rover {
+  height: 300px;
+  width: 250px;
+  background-color: #68818c1c;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mars-rover form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.mars-rover form input {
+  border: 1px solid transparent;
+  padding: 8px;
+  transform: 0.5s ease-in-out;
+}
+
+.mars-rover form input:focus {
+  outline: none;
+  border-color: #4eb4b2;
+}
+
+.mars-rover form #btn {
+  border: 1px solid transparent;
+  background: #4eb4b2;
+  color: #fff;
+  padding: 9px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.mars-rover form #btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #4eb4b2;
+}
+
+.mars-rover form .note{
+  color: #afafaf;
+    font-size: 10px;
+}
