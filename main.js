@@ -2,9 +2,9 @@ let input = document.getElementById("command");
 
 document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
-  let command = input.value;
+  let command = input.value.toUpperCase();
 
-  let inputRegEx = /^[fblrFBLR]+$/;
+  let inputRegEx = /^[FBLR]+$/;
 
   // check if the input is correct, then start applying functionality on the input
   if (inputRegEx.test(command) === true) {
@@ -105,7 +105,9 @@ document.getElementById("form").addEventListener("submit", (e) => {
           break;
           /*if my current step dosent equal to any of the obstacles,, then continue the loop and the full command */
         } else {
-          document.getElementById("result").innerHTML = `(${rover.x} ,${rover.y}) ${headings[rover.heading]}`;
+          document.getElementById("result").innerHTML = `(${rover.x} ,${
+            rover.y
+          }) ${headings[rover.heading]}`;
         }
       }
 
@@ -115,4 +117,3 @@ document.getElementById("form").addEventListener("submit", (e) => {
     alert("Please enter a valid Command ");
   }
 });
-
