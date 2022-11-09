@@ -14,7 +14,7 @@ const roverSlice = createSlice({
       state.rover.x--;
     },
     decrementY(state) {
-      state.rover.y++;
+      state.rover.y--;
     },
     rotateLeft(state) {
       if (state.rover.heading - 1 < 0) {

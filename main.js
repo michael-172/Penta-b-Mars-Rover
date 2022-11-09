@@ -9,7 +9,6 @@ document.getElementById("form").addEventListener("submit", (e) => {
   // check if the input is correct, then start applying functionality on the input
   if (inputRegEx.test(command) === true) {
     const obstacles = [
-      [0, 1],
       [1, 4],
       [3, 5],
       [7, 4],
